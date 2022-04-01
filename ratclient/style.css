@@ -1,0 +1,47 @@
+textarea {
+    vertical-align: bottom;
+}
+
+#upperfield {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    height: 250px;
+    max-height: 250px;
+}
+
+#inputfield form{
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+
+#inputfield form div{
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+
+#output {
+    overflow: auto;
+}
+
+#output > p {
+    overflow-wrap: break-word;
+}
+
+#output span {
+    color: blue;
+}
+
+#output span.error {
+    color: red;
+}
+
+#options {
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: 5% 5%;
+}
+
+#options div button {
+    width: 100%;
+}

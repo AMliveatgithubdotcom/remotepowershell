@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id=upperfield>
+        <div id=inputfield>
+            <form id=newuser>
+                <label>Name:</label> <input class="value" name="name" type="text" />
+                <label>Password:</label> <input class="value" name="password" type="password" />
+                <label>Description:</label> <textarea class="value" style="width: 179px; height: 90px;" cols="20" name="description" rows="5"></textarea>
+                <label>Full Name:</label> <input class="value" name="fullname" type="text" />
+                <label>No Password:</label> <input class="checkedvalue" type="checkbox" />
+                <label>Disable Account:</label> <input class="checkedvalue" type="checkbox" />
+            </form>
+            <form id=edituser>
+                <label>User to edit: </label> <select class="value" name="userlist" id="userlist" ></select>
+                <label>Name:</label> <input class="value" name="name" type="text" />
+                <label>Password:</label> <input class="value" name="password" type="password" />
+                <label>Description:</label> <textarea class="value" style="width: 179px; height: 90px;" cols="20" name="description" rows="5"></textarea>
+                <label>Full Name:</label> <input class="value" name="fullname" type="text" />
+            </form>
+            <form id="deleteuser">
+                <label>Account to delete:</label><select class="value" name="userlist" id="userlist"></select>
+            </form>
+            <form id=custom>
+                <label>Command:</label> <input class="value" name="name" type="text" />
+                <label>Parameters:</label> <textarea class="value" style="width: 179px; height: 90px;" cols="20" name="description" rows="5"></textarea>
+            </form>
+        </div>
+        <div id=output></div>
+    </div>
+    <div id=buttonfield>
+
+        <button id=send>send</button>
+		<label>Address:</label><input id="ip" name="ip" value="127.0.0.1" type="text" />
+        <button id=connect>manual connection</button>
+    </div>
+    <div id=options>
+        <div id="usermanagement">
+            <center> User Management </center>
+            <button onclick="chooseNewUser()">New User</button>
+            <button onclick="chooseEditUser()">Edit User</button>
+            <button onclick="chooseDeleteUser()">Delete User</button>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="client.js"></script>
+</body>
